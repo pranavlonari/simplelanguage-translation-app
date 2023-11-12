@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Language Translation App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Language Translation App</h1>
+      <div class="language-select">
+        <label for="source-language">Source Language:</label>
+        <select id="source-language">
+          <option value="en">English</option>
+          <option value="mr">Marathi</option>
+          <option value="hi">Hindi</option>
+          <option value="ja">Japanese</option>
+          <option value="zh">Chinese</option>
+          <option value="de">German</option>
+          <!-- Add more language options here -->
+        </select>
+      </div>
+      <div class="language-select">
+        <label for="target-language">Target Language:</label>
+        <select id="target-language">
+          <option value="en">English</option>
+          <option value="mr">Marathi</option>
+          <option value="hi">Hindi</option>
+          <option value="ja">Japanese</option>
+          <option value="zh">Chinese</option>
+          <option value="de">German</option>
+          <!-- Add more language options here -->
+        </select>
+      </div>
+      <div class="text-input">
+        <label for="source-text">Enter text to translate:</label>
+        <textarea id="source-text" placeholder="Enter text"></textarea>
+      </div>
+      <button id="translate-button">Translate</button>
+      <div class="result">
+        <p>Translated Text:</p>
+        <div id="translated-text"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

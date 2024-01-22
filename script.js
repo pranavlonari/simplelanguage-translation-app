@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const sourceText = document.getElementById("source-text");
   const translateButton = document.getElementById("translate-button");
   const translatedText = document.getElementById("translated-text");
-  const API_KEY = "YOUR_API_KEY"; // Replace with your actual API key
+  const API_KEY = API_ID; // Replace with your actual API key
 
   translateButton.addEventListener("click", () => {
     const sourceLang = sourceLanguageSelect.value;

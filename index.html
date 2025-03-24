@@ -8,11 +8,13 @@
   </head>
   <body>
     <div class="container">
-      <h1>Language Translation App</h1>
+      <h1>🌍 Language Translation App</h1>
 
-      
+      <div class="alert">
+        ⚠️ API Key is Expired, Translation Service is Unavailable!
+      </div>
+
       <div class="language-select">
-        <p> API Key is Expired so Translation Service will not available</p>
         <label for="source-language">Source Language:</label>
         <select id="source-language">
           <option value="en">English</option>
@@ -21,9 +23,9 @@
           <option value="ja">Japanese</option>
           <option value="zh">Chinese</option>
           <option value="de">German</option>
-          <!-- Add more language options here -->
         </select>
       </div>
+
       <div class="language-select">
         <label for="target-language">Target Language:</label>
         <select id="target-language">
@@ -33,19 +35,22 @@
           <option value="ja">Japanese</option>
           <option value="zh">Chinese</option>
           <option value="de">German</option>
-          <!-- Add more language options here -->
         </select>
       </div>
+
       <div class="text-input">
         <label for="source-text">Enter text to translate:</label>
-        <textarea id="source-text" placeholder="Enter text"></textarea>
+        <textarea id="source-text" placeholder="Enter text here..."></textarea>
       </div>
-      <button id="translate-button">Translate</button>
+
+      <button id="translate-button">🔄 Translate</button>
+
       <div class="result">
-        <p>Translated Text:</p>
-        <div id="translated-text"></div>
+        <p>📝 Translated Text:</p>
+        <div id="translated-text" class="output-box"></div>
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
